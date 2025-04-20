@@ -1,6 +1,6 @@
 title: Monthly News Digest
 description: A minimalist approach to staying informed without the noise
-theme: jekyll-theme-minimal
+# theme: jekyll-theme-minimal
 baseurl: "/monthlydigest"
 url: "https://scumborg.github.io"
 
