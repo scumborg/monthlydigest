@@ -1,4 +1,4 @@
-# Monthly News Digest
+# The Monthly Digest
 
 A minimalist approach to staying informed without the noise.
 
