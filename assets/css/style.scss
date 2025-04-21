@@ -1,9 +1,9 @@
+/* Add this to your assets/css/style.scss file */
+
 ---
 ---
 
-@import "{{ site.theme }}";
-
-/* Your custom styles below */
+/* Base styles */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   line-height: 1.6;
@@ -13,10 +13,48 @@ body {
   color: #24292e;
 }
 
-a {
-  color: #0366d6;
+/* Navigation bar */
+.nav {
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
 }
 
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav li {
+  float: left;
+  margin-right: 20px;
+}
+
+.nav li a {
+  display: block;
+  color: #0366d6;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav li a:hover {
+  text-decoration: underline;
+}
+
+/* Active page styling */
+.nav li a.active {
+  color: #24292e;
+  cursor: default;
+}
+
+.nav li a.active:hover {
+  text-decoration: none;
+}
+
+/* Content styling */
 h1, h2, h3 {
   margin-top: 24px;
   margin-bottom: 16px;
@@ -24,4 +62,11 @@ h1, h2, h3 {
   line-height: 1.25;
 }
 
-/* Add only what you need */
+a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
