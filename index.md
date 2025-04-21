@@ -7,6 +7,8 @@ title: Home
 
 ## Latest: [April 2025]({{ site.baseurl }}/digests/2025-04)
 
+{% include_relative digests/2025-04.md %}
+
 A curated summary of essential developments from the past month, organized by category and presented without the noise of traditional news media.
 
 ### Recent Digests
