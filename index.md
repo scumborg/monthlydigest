@@ -7,7 +7,8 @@ title: Home
 
 ## Latest: [April 2025]({{ site.baseurl }}/digests/2025-04)
 
-{% include_relative digests/2025-04.md %}
+{% capture digest_content %}{% include_relative digests/2025-04.md %}{% endcapture %}
+{{ digest_content | remove_first: "---" | remove_first: "layout: default" | remove_first: "title: April 2025 News Digest" | remove_first: "---" }}
 
 A curated summary of essential developments from the past month, organized by category and presented without the noise of traditional news media (TEST)
 
