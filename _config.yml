@@ -2,15 +2,13 @@ title: The Monthly Digest
 description: A minimalist approach to staying informed without the noise
 baseurl: "/monthlydigest"
 url: "https://scumborg.github.io"
-github_username: scumborg
+
+# Optional settings
+author: Sean
+email: your-email@example.com
 
 # Build settings
 markdown: kramdown
 
-# Default layout
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      layout: "default"
+# Permalinks
+permalink: pretty

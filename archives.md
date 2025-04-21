@@ -1,15 +1,21 @@
 ---
 layout: default
 title: Archives
-permalink: /archives/
 ---
 
-# Digest Archives
+# Monthly Digest Archives
 
-Browse all previous monthly digests:
+Browse all past monthly digests:
 
-- [April 2025](/monthlydigest/digests/2025-04.html) — Published April 15, 2025
-- [March 2025](/monthlydigest/digests/2025-03.html) — Published March 15, 2025
-- [February 2025](/monthlydigest/digests/2025-02.html) — Published February 15, 2025
+## 2025
+- [April 2025]({{ site.baseurl }}/digests/2025-04.html) - Published April 15, 2025
+- [March 2025]({{ site.baseurl }}/digests/2025-03.html) - Published March 15, 2025
+- [February 2025]({{ site.baseurl }}/digests/2025-02.html) - Published February 15, 2025
 
-New digests are published by the 15th of each month.
+<!--
+As you add more digests, you can organize them by year like this:
+
+## 2024
+- [December 2024]({{ site.baseurl }}/digests/2024-12.html)
+- [November 2024]({{ site.baseurl }}/digests/2024-11.html)
+-->

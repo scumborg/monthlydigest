@@ -4,30 +4,84 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if page.title %}{{ page.title }} | {% endif %}The Monthly Digest</title>
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      color: #24292e;
+    }
+    
+    /* Simple navigation */
+    nav {
+      border-bottom: 1px solid #eaecef;
+      padding-bottom: 15px;
+      margin-bottom: 30px;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+    
+    nav a {
+      color: #0366d6;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    
+    nav a:hover {
+      text-decoration: underline;
+    }
+    
+    /* Basic content styling */
+    h1, h2, h3 {
+      margin-top: 24px;
+      margin-bottom: 16px;
+      font-weight: 600;
+      line-height: 1.25;
+    }
+    
+    a {
+      color: #0366d6;
+      text-decoration: none;
+    }
+    
+    a:hover {
+      text-decoration: underline;
+    }
+    
+    /* Simple footer */
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #eaecef;
+      font-size: 0.9em;
+      color: #586069;
+    }
+  </style>
 </head>
 <body>
-  <header class="site-header">
-    <h1 class="site-title">
-      <a href="{{ '/' | relative_url }}">The Monthly Digest</a>
-    </h1>
-    <nav class="site-nav">
-      <ul>
-        <li><a href="{{ '/' | relative_url }}">Latest</a></li>
-        <li><a href="{{ '/archives' | relative_url }}">Archives</a></li>
-        <li><a href="{{ '/about' | relative_url }}">About</a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav>
+    <ul>
+      <li><a href="{{ site.baseurl }}/">Home</a></li>
+      <li><a href="{{ site.baseurl }}/digests/2025-04.html">Latest</a></li>
+      <li><a href="{{ site.baseurl }}/archives.html">Archives</a></li>
+      <li><a href="{{ site.baseurl }}/about.html">About</a></li>
+    </ul>
+  </nav>
 
-  <main class="content">
+  <main>
     {{ content }}
   </main>
 
-  <footer class="site-footer">
-    <p>The Monthly Digest — A minimalist approach to staying informed without the noise.</p>
-    <p class="principles">Intentional consumption • Balanced awareness • Mental wellbeing • Thoughtful distance</p>
-    <p>Last updated: {{ site.time | date: '%B %d, %Y' }} • <a href="https://github.com/scumborg/monthlydigest">GitHub</a></p>
+  <footer>
+    <p>A minimalist approach to staying informed without the noise. Updated {{ site.time | date: '%B %d, %Y' }}</p>
   </footer>
 </body>
 </html>
