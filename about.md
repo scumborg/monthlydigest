@@ -1,4 +1,5 @@
 ---
+layout: default
 title: About
 permalink: /about/
 ---
@@ -29,11 +30,6 @@ This project is guided by four core principles:
 
 ## Support This Project
 
-This project is currently self-funded and provided as a free resource. If you find it valuable, consider:
+This project is currently self-funded and provided as a free resource. If you find it valuable, consider sharing it with others who might benefit.
 
-- Sharing it with others who might benefit
-- Providing feedback on how it could better serve you
-
-## About Me
-
-This project is maintained by Sean.
+*A project by Sean*

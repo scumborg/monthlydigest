@@ -2,10 +2,10 @@ title: The Monthly Digest
 description: A minimalist approach to staying informed without the noise
 baseurl: "/monthlydigest"
 url: "https://scumborg.github.io"
+github_username: scumborg
 
 # Build settings
 markdown: kramdown
-permalink: pretty
 
 # Default layout
 defaults:
@@ -14,17 +14,3 @@ defaults:
       path: ""
     values:
       layout: "default"
-  -
-    scope:
-      path: "digests"
-      type: "pages"
-    values:
-      layout: "default"
-
-# Exclude from processing
-exclude:
-  - .gitignore
-  - README.md
-  - CNAME
-  - Gemfile
-  - Gemfile.lock

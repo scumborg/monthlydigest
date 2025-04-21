@@ -7,12 +7,27 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
-  {% include header.html %}
-  
-  <main>
+  <header class="site-header">
+    <h1 class="site-title">
+      <a href="{{ '/' | relative_url }}">The Monthly Digest</a>
+    </h1>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="{{ '/' | relative_url }}">Latest</a></li>
+        <li><a href="{{ '/archives' | relative_url }}">Archives</a></li>
+        <li><a href="{{ '/about' | relative_url }}">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="content">
     {{ content }}
   </main>
-  
-  {% include footer.html %}
+
+  <footer class="site-footer">
+    <p>The Monthly Digest — A minimalist approach to staying informed without the noise.</p>
+    <p class="principles">Intentional consumption • Balanced awareness • Mental wellbeing • Thoughtful distance</p>
+    <p>Last updated: {{ site.time | date: '%B %d, %Y' }} • <a href="https://github.com/scumborg/monthlydigest">GitHub</a></p>
+  </footer>
 </body>
 </html>

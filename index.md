@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Home
 ---
 
@@ -36,4 +37,4 @@ This month's developments reflect ongoing tension between technological advancem
 
 *This digest represents factual summaries without unnecessary emotional loading or analysis.*
 
-[View previous digests in the Archives](/digests/)
+[View previous digests in the Archives](/monthlydigest/archives)
