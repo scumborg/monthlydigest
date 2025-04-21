@@ -1,12 +1,30 @@
 title: The Monthly Digest
 description: A minimalist approach to staying informed without the noise
-# theme: jekyll-theme-minimal
 baseurl: "/monthlydigest"
 url: "https://scumborg.github.io"
 
-# Optional but useful settings
-author: Your Name
-email: your-email@example.com
-
 # Build settings
 markdown: kramdown
+permalink: pretty
+
+# Default layout
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: "digests"
+      type: "pages"
+    values:
+      layout: "default"
+
+# Exclude from processing
+exclude:
+  - .gitignore
+  - README.md
+  - CNAME
+  - Gemfile
+  - Gemfile.lock

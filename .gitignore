@@ -1,0 +1,15 @@
+# Jekyll build files
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Local development
+.bundle/
+vendor/
+
+# System files
+.DS_Store
+Thumbs.db
+*.swp
+*~
